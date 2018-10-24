@@ -1,0 +1,50 @@
+.form_box{width:600px; margin:0 auto; margin-top:10px; margin-bottom: 40px; text-align: left;}
+.fileinput{margin-left: 10px;}
+/*.preview_box{clear: both; border: 3px solid black;position: relative; margin-top: 20px; height: 450px; width: 600px;}
+.preview_box img{max-width: 100%;max-height: 400px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;}*/
+.preview_box{clear: both; border: 3px solid black; min-width: 200px;min-height: 200px}
+.preview_box img{max-width: 100%;max-height: 100%;}
+
+.preview_box.imgMode{position: relative;background: white;}
+.imgMode img{position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;}
+
+
+.btnContainer{float: right;}
+.lblContainer{float: left;}
+.displaynone{display: none;}
+
+.products .product{cursor: pointer;  margin-top: 14px;  padding: 2px 4px;  width: 151px;}
+.products .product .box { background-color: #d2d2d2; border-radius: 2px; float: right; height: 32px; margin: 6px 0 0 9px; width: 54px; position: relative;}
+.products .product .size { color: gray; clear: right; font-size: 11px; margin-left: 11px; text-align: right;}
+.products .product.selected .box { background-color: #00a3e1; }
+.products .product .price { float: right; font-size: 25px; height: 31px; line-height: 31px; padding: 0 4px 0 0; text-align: right; width: 48px;}
+
+.imageloader { border: 16px solid #f3f3f3; border-radius: 50%; border-top: 16px solid #3498db; width: 120px;
+  height: 120px;   -webkit-animation: spin 2s linear infinite; /* Safari */ animation: spin 2s linear infinite;}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.rightColumn {float: left;}
+.leftColumn {float: left; width: 250px;min-height: 10px;}
+
+.products .product.product-overcast {
+    -ms-filter: "alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    -moz-opacity: .6;
+    -khtml-opacity: .6;
+    opacity: .6;
+    cursor: default;
+}
+
+.landscape{ height: auto; width: 400px;}
+.portrait{height: 400px; width: auto;}
+.square{height: 400px; width: 400px;}
+
+.imgMode.landscape{ height: 360; width: 480px;}
+.imgMode.portrait{ height: 480; width: 360px;}
+.imgMode.square{ height: 400; width: 400px;}
+
+.mainCont{margin-top: 20px;}

@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title>Preview Selected Image</title>
+		<!-- Include jQuery library -->
+		<link rel="stylesheet" href="bootstrap.css">
+		<link rel="stylesheet" href="mystyle.css">
+		<script src="js/jquery.min.js"></script>
+  		<script src="js/bootstrap.min.js"></script>
+  		<script type="text/javascript" src="js/html2canvas.js"></script>
+		<script type="text/javascript" src="js/base64.js"></script>
+		<script type="text/javascript" src="js/dom-to-img.js"></script>
+		<script type="text/javascript" src="js/canvas2image.js"></script>
+		<!-- jQuery read image data and show preview code -->
+		<script src="myscript.js" type="text/javascript"></script>
+	</head>
+	<body>
+		
+
+		<div class="container">
+        	<div class="row">
+        		<div class="form_box">
+					<h1>Preview Selected Image</h1>
+					<form id="upload_form" method="post">
+						<div class="lblContainer">
+							<label><b>Select Image : </b></label>
+				        	<input type="file" id="image" name="image" class="fileinput"/>	
+						</div>
+				        <div class="btnContainer">
+				        	<a type="button" class="btn btn-default" id="btnSave">Download Image</a>
+				        	<button type="button" class="btn btn-default" id="btnCreate">Create Image</button>
+				        	<button type="button" class="btn btn-default btnPortrait btnMode">Portrait</button>
+							<button type="button" class="btn btn-default btnLandscape btnMode">Landscape</button>
+							<button type="button" class="btn btn-default btnSquare btnMode">Square</button>
+				        </div>		        
+				    </form>
+				</div>
+        	</div>
+        	<div class="row mainCont">
+				<!-- <div class="col-md-2">			
+				</div>
+				<div class="col-md-8"> -->
+					<div class="leftColumn">
+						<div class="products displaynone">
+                            <div class="product selected" data-height="4.8" data-width="6.4" data-price="18" data-product_id="6" boxSize="small">
+                                <div class="box" bxHeight="4" bxWidth="3" style="width: 16px; height: 12px;"></div>
+                                <div class="price ">$18</div>
+                                <div class="size">Small</div>
+                            </div>
+                            <div class="product" data-height="7.2" data-width="9.6" data-price="40" data-product_id="8" boxSize="medium">
+                                <div class="box" bxHeight="6" bxWidth="4.5" style="width: 24px; height: 18px;"></div>
+                                <div class="price ">$40</div>
+                                <div class="size">Medium</div>
+                            </div>
+                             <div class="product" data-height="10.8" data-width="14.4" data-price="65" data-product_id="10" boxSize="classic">
+                                <div class="box" bxHeight="9" bxWidth="7" style="width: 36px; height:27px;"></div>
+                                <div class="price ">$65</div>
+                                <div class="size">Classic</div>
+                            </div>
+                            <div class="product" data-height="15.6" data-width="20.8" data-price="85" data-product_id="20"  boxSize="large">
+                                <div class="box" bxHeight="13" bxWidth="10" style="width: 52px; height: 39px;"></div>
+                                <div class="price ">$85</div>
+                                <div class="size">Large</div>
+                            </div>
+                            <div class="product" data-height="21.6" data-width="28.8" data-price="125" data-product_id="22" boxSize="extralarge">
+                                <div class="box" bxHeight="18" bxWidth="13.5" style="width: 72px; height: 54px;"></div>
+                                <div class="price ">$125</div>
+                                <div class="size">Extra Large</div>
+                            </div>
+                        </div>	
+					</div>
+					<div class="rightColumn">
+						<div class="preview_box" id="preview_box">
+							<div class="imageloader displaynone"></div>
+				        	<img id="preview_img" class="displaynone" src=""/>
+				        </div>	
+					</div>
+					<div id="img-out"></div>
+					<img id="mainImg">
+				<!-- </div> -->
+			</div>
+      	</div>
+
+	</body>
+</html>
+
+ 
